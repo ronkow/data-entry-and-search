@@ -1,0 +1,130 @@
+PS E:\myproject> python -m data_entry
+
+Select an option:
+1. Retrieve all records
+2. Enter a record
+3. Search for a record
+4. Quit
+1
+
+name    gender  birthyear
+Mary    F       2000
+Jack    M       2000
+Kim     F       2000
+Zoe     F       2000
+Winnie  F       1999
+Ron     M       1960
+Maggie  F       1980
+Jack    M       1970
+Lenny   M       1966
+Zac     M       1970
+Manny   F       1980
+Lesley  F       1980
+Mac     M       1980
+Nancy   F       1970
+Paul    M       1980
+Bob     M       1980
+Henry   M       1980
+Pat     M       1980
+Jimmy   M       1980
+Greg    M       1980
+
+Select an option:
+1. Retrieve all records
+2. Enter a record
+3. Search for a record
+4. Quit
+2
+
+Enter the name:
+Patsy
+Enter the gender:
+f
+Enter the birth year:
+1980
+
+Do you want to enter another record? (y/n)
+n
+
+RECORDS ENTERED
+---------------
+name    gender  birthyear
+Patsy   F       1980
+
+Select an option:
+1. Retrieve all records
+2. Enter a record
+3. Search for a record
+4. Quit
+3
+
+DATA SEARCH
+-----------
+Select an option:
+Enter 1 to search by name.
+Enter 2 to search by gender.
+Enter 3 to search by birth year.
+1
+
+Enter the name: ron
+
+Matched records:
+{'name': 'Ron', 'gender': 'M', 'birthyear': '1960'}
+
+Do you wish to do another search? (y/n)
+y
+
+Select an option:
+Enter 1 to search by name.
+Enter 2 to search by gender.
+Enter 3 to search by birth year.
+2
+
+Enter the gender: f
+
+Matched records:
+{'name': 'Mary', 'gender': 'F', 'birthyear': '2000'}
+{'name': 'Kim', 'gender': 'F', 'birthyear': '2000'}
+{'name': 'Zoe', 'gender': 'F', 'birthyear': '2000'}
+{'name': 'Winnie', 'gender': 'F', 'birthyear': '1999'}
+{'name': 'Maggie', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Manny', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Lesley', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Nancy', 'gender': 'F', 'birthyear': '1970'}
+{'name': 'Patsy', 'gender': 'F', 'birthyear': '1980'}
+
+Do you wish to do another search? (y/n)
+y
+
+Select an option:
+Enter 1 to search by name.
+Enter 2 to search by gender.
+Enter 3 to search by birth year.
+3
+
+Enter the birth year: 1980
+
+Matched records:
+{'name': 'Maggie', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Manny', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Lesley', 'gender': 'F', 'birthyear': '1980'}
+{'name': 'Mac', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Paul', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Bob', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Henry', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Pat', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Jimmy', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Greg', 'gender': 'M', 'birthyear': '1980'}
+{'name': 'Patsy', 'gender': 'F', 'birthyear': '1980'}
+
+Do you wish to do another search? (y/n)
+n
+
+
+Select an option:
+1. Retrieve all records
+2. Enter a record
+3. Search for a record
+4. Quit
+4
+PS E:\myproject>
