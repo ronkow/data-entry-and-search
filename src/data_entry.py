@@ -159,9 +159,8 @@ def select_option():
 ###################
 
 def main():
-    #DATA_PATH = ('data/data.csv')
-    
-    DATA_PATH = os.path.join('data','data.csv')
+    DATA_DIR = '../data'
+    DATA_PATH = os.path.join(DATA_DIR, 'data.csv')
     
     while True:
         print()
@@ -179,7 +178,6 @@ def main():
             except FileNotFoundError as e:
                 print('ERROR:',e)
                 print('We are so sorry your record cannot be saved!')
-                
             
         elif x == '3':
             print()
