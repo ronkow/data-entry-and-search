@@ -7,7 +7,7 @@ Select an option:
 4. Quit
 1
 
-name    gender  birthyear
+NAME    GENDER  BIRTH YEAR
 Mary    F       2000
 Jack    M       2000
 Kim     F       2000
@@ -30,10 +30,10 @@ Jimmy   M       1980
 Greg    M       1980
 
 Select an option:
-1. Retrieve all records
-2. Enter a record
-3. Search for a record
-4. Quit
+1. Retrieve all records.
+2. Enter a record.
+3. Search for a record.
+4. Quit.
 2
 
 Enter the name:
@@ -52,10 +52,10 @@ name    gender  birthyear
 Patsy   F       1980
 
 Select an option:
-1. Retrieve all records
-2. Enter a record
-3. Search for a record
-4. Quit
+1. Retrieve all records.
+2. Enter a record.
+3. Search for a record.
+4. Quit.
 3
 
 DATA SEARCH
@@ -69,7 +69,8 @@ Enter 3 to search by birth year.
 Enter the name: ron
 
 Matched records:
-{'name': 'Ron', 'gender': 'M', 'birthyear': '1960'}
+NAME  GENDER  BIRTH YEAR
+Ron   M       1960
 
 Do you wish to do another search? (y/n)
 y
@@ -83,15 +84,10 @@ Enter 3 to search by birth year.
 Enter the gender: f
 
 Matched records:
-{'name': 'Mary', 'gender': 'F', 'birthyear': '2000'}
-{'name': 'Kim', 'gender': 'F', 'birthyear': '2000'}
-{'name': 'Zoe', 'gender': 'F', 'birthyear': '2000'}
-{'name': 'Winnie', 'gender': 'F', 'birthyear': '1999'}
-{'name': 'Maggie', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Manny', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Lesley', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Nancy', 'gender': 'F', 'birthyear': '1970'}
-{'name': 'Patsy', 'gender': 'F', 'birthyear': '1980'}
+NAME  GENDER  BIRTH YEAR
+Mary  F       2000
+Kim   F       2002
+Zoe   F       1990
 
 Do you wish to do another search? (y/n)
 y
@@ -105,26 +101,20 @@ Enter 3 to search by birth year.
 Enter the birth year: 1980
 
 Matched records:
-{'name': 'Maggie', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Manny', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Lesley', 'gender': 'F', 'birthyear': '1980'}
-{'name': 'Mac', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Paul', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Bob', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Henry', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Pat', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Jimmy', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Greg', 'gender': 'M', 'birthyear': '1980'}
-{'name': 'Patsy', 'gender': 'F', 'birthyear': '1980'}
+NAME    GENDER  BIRTH YEAR
+Maggie  F       1980
+Bob     M       1980
+Henry   M       1980
+
 
 Do you wish to do another search? (y/n)
 n
 
 
 Select an option:
-1. Retrieve all records
-2. Enter a record
-3. Search for a record
-4. Quit
+1. Retrieve all records.
+2. Enter a record.
+3. Search for a record.
+4. Quit.
 4
 PS E:\myproject>
