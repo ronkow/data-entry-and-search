@@ -152,6 +152,10 @@ def select_option():
     print('3. Search for a record.')
     print('4. Quit.')
     x = input()
+    
+    while x not in ('1', '2', '3', '4'):
+        print('Invalid entry. Enter 1, 2, 3 or 4:')
+        x = input()
     return x
 
 ###################
