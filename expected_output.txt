@@ -8,6 +8,8 @@ Select an option:
 4. Quit.
 1
 
+ALL RECORDS
+-----------
 NAME    GENDER  BIRTH YEAR
 Mary    F       2000
 Kim     F       2002
