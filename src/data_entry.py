@@ -20,7 +20,7 @@ from data_search import search
 ############################
 
 def print_records(lod):
-    print(f'name\tgender\tbirthyear')
+    print(f'NAME\tGENDER\tBIRTH YEAR')
     for i in lod:
         print(f"{i['name']}\t{i['gender']}\t{i['birthyear']}")    
 
@@ -147,10 +147,10 @@ def enter_record():
 
 def select_option():
     print('Select an option:')
-    print('1. Retrieve all records')
-    print('2. Enter a record')
-    print('3. Search for a record')
-    print('4. Quit')
+    print('1. Retrieve all records.')
+    print('2. Enter a record.')
+    print('3. Search for a record.')
+    print('4. Quit.')
     x = input()
     return x
 
