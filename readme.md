@@ -1,3 +1,3 @@
-## data entry and search application
+## Data Entry and Search
 
-This is a data entry and search app.
+This is a simple data entry and search program. Created for a beginner Python course.
