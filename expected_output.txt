@@ -1,10 +1,10 @@
 PS E:\myproject> python -m data_entry
 
 Select an option:
-1. Retrieve all records
-2. Enter a record
-3. Search for a record
-4. Quit
+1. Retrieve all records.
+2. Enter a record.
+3. Search for a record.
+4. Quit.
 1
 
 NAME    GENDER  BIRTH YEAR
