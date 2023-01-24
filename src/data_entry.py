@@ -20,6 +20,8 @@ from data_search import search
 ############################
 
 def print_records(lod):
+    print('ALL RECORDS')
+    print('-----------')
     print(f'NAME\tGENDER\tBIRTH YEAR')
     for i in lod:
         print(f"{i['name']}\t{i['gender']}\t{i['birthyear']}")    
@@ -116,7 +118,8 @@ def enter_another_record():
 
 def enter_record():    
     lod = []
-    
+    print('DATA ENTRY')
+    print('----------')
     n = enter_name().title()
     g = enter_gender().upper()
     y = enter_birthyear()
@@ -146,6 +149,8 @@ def enter_record():
 #################
 
 def select_option():
+    print('STUDENT DATASTORE')
+    print('-----------------')
     print('Select an option:')
     print('1. Retrieve all records.')
     print('2. Enter a record.')
