@@ -47,6 +47,8 @@ def another_search():
 # If result r is not an empty list, print the search results.
 # Return None.
 def print_result(lod): # lod: list of dicts
+    print('MATCHED RECORDS')
+    print('---------------')
     print('NAME\tGENDER\tBIRTH YEAR')  # \t tab character
     for d in lod:
         print(d['name'], end='\t')    
