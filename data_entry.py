@@ -1,5 +1,4 @@
 '''
-xxxxx
 IMPROVING YOUR PROGRAM
 1. Validate all user entries.
 2. Split a long function into two or more shorter functions.
