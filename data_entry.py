@@ -163,7 +163,7 @@ def main():
     
     DATA_PATH = os.path.join('data','data.csv')
     
-    while True:   # loop runs forever until you stop it in your program
+    while True:
         print()
         x = select_option()
         if x == '1':
