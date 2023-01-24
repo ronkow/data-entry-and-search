@@ -159,7 +159,7 @@ def select_option():
 ###################
 
 def main():
-    DATA_DIR = '../data'
+    DATA_DIR = '/data-entry-and-search/data'
     DATA_PATH = os.path.join(DATA_DIR, 'data.csv')
     
     while True:
