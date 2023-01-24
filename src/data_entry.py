@@ -20,27 +20,22 @@ from data_search import search
 ############################
 
 def print_records(lod):
-    print('ALL RECORDS')
-    print('-----------')
     print(f'NAME\tGENDER\tBIRTH YEAR')
     for i in lod:
         print(f"{i['name']}\t{i['gender']}\t{i['birthyear']}")    
 
                 
-def retrieve_all_data_lod(filepath):
+def retrieve_all_data(filepath):
     try:
         lod = file_to_list_of_dicts(filepath)
     except FileNotFoundError as e:
         print('ERROR:',e)
     else:
+        print('ALL RECORDS')
+        print('-----------')
         print_records(lod)
 
-    
-#def retrieve_all_data_lol(filepath):
-#    lol = file_to_list_of_lists(filepath)
-#    for i in lol:
-#        print(f'{i[0]}\t{i[1]}\t{i[2]}')
-        
+            
 ###################
 # VALIDATION
 ###################
@@ -49,7 +44,7 @@ def validate_year(x):
     digits = '0123456789'
     for char in x:   
         if char not in digits:
-            return False   # return statement exits the function.
+            return False 
     x = int(x)                 
     if x >= 1960 and x <= 2022:
         return True
@@ -63,7 +58,7 @@ def validate_name(x):
     letters = upper + lower + whitespace
     for char in x:   
         if char not in letters:
-            return False   # return statement exits the function.
+            return False 
     return True    
 
 ###################
@@ -172,7 +167,7 @@ def main():
         x = select_option()
         if x == '1':
             print()
-            retrieve_all_data_lod(DATA_PATH)
+            retrieve_all_data(DATA_PATH)
             
         elif x == '2':
             print()
