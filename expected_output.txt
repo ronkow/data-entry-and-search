@@ -1,5 +1,6 @@
 PS E:\myproject> python -m data_entry
-
+STUDENT DATASTORE
+-----------------
 Select an option:
 1. Retrieve all records.
 2. Enter a record.
@@ -18,6 +19,8 @@ Paul    M       1980
 Bob     M       1980
 Henry   M       1980
 
+STUDENT DATASTORE
+-----------------
 Select an option:
 1. Retrieve all records.
 2. Enter a record.
@@ -25,6 +28,8 @@ Select an option:
 4. Quit.
 2
 
+DATA ENTRY
+----------
 Enter the name:
 Zoe
 Enter the gender:
@@ -40,6 +45,8 @@ RECORDS ENTERED
 name    gender  birthyear
 Zoe     F       1990
 
+STUDENT DATASTORE
+-----------------
 Select an option:
 1. Retrieve all records.
 2. Enter a record.
@@ -57,7 +64,8 @@ Enter 3 to search by birth year.
 
 Enter the name: ron
 
-Matched records:
+MATCHED RECORDS
+---------------
 NAME  GENDER  BIRTH YEAR
 Ron   M       1960
 
@@ -72,7 +80,8 @@ Enter 3 to search by birth year.
 
 Enter the gender: f
 
-Matched records:
+MATCHED RECORDS
+---------------
 NAME  GENDER  BIRTH YEAR
 Mary  F       2000
 Kim   F       2002
@@ -81,6 +90,8 @@ Zoe   F       1990
 Do you wish to do another search? (y/n)
 y
 
+DATA SEARCH
+-----------
 Select an option:
 Enter 1 to search by name.
 Enter 2 to search by gender.
@@ -89,7 +100,8 @@ Enter 3 to search by birth year.
 
 Enter the birth year: 1980
 
-Matched records:
+MATCHED RECORDS
+---------------
 NAME    GENDER  BIRTH YEAR
 Paul    M       1980
 Bob     M       1980
@@ -98,6 +110,8 @@ Henry   M       1980
 Do you wish to do another search? (y/n)
 n
 
+STUDENT DATASTORE
+-----------------
 Select an option:
 1. Retrieve all records.
 2. Enter a record.
