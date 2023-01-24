@@ -1,6 +1,5 @@
 from file import file_to_list_of_dicts
 
-
 ###################
 # VALIDATION
 ###################
@@ -76,7 +75,7 @@ def search_database(lod, x, q): # lod: list of dictionaries
     elif x == '2': # gender
         matched_records = match_record(lod, matched_records, 'gender', q)
                         
-    else:          # birthyear
+    else: # birthyear
         matched_records = match_record(lod, matched_records, 'birthyear', q)
         
     return matched_records
@@ -129,9 +128,9 @@ def enter_query(x):
 # Return the selected option (1, 2 or 3).
 def select_search_field():
     print('Select an option:')
-    print('1. Search by name')
-    print('2. Search by gender')
-    print('3. Search by birthyear')
+    print('1. Search by name.')
+    print('2. Search by gender.')
+    print('3. Search by birth year.')
     x = input()
     
     while x not in ('1', '2', '3'):
