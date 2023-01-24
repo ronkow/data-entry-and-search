@@ -127,6 +127,8 @@ def enter_query(x):
 # Validate the user entry (1, 2 or 3).
 # Return the selected option (1, 2 or 3).
 def select_search_field():
+    print('DATA SEARCH')
+    print('-----------')
     print('Select an option:')
     print('1. Search by name.')
     print('2. Search by gender.')
@@ -152,7 +154,6 @@ def read_data(DATA_PATH):
     return lod
     
 
-
 # STEPS:
 # 1. Read the data file and store the data in a list of dicts (lod).
 # 2. In a while loop, call select_search_field(). 
@@ -166,12 +167,9 @@ def read_data(DATA_PATH):
 #    Otherwise, the loop in step 2 runs again.
 
 def search(DATA_PATH):    
-    print('DATA SEARCH')
-    print('-----------')
     
     # STEP 1
     lod = read_data(DATA_PATH)
-    
 
     # While loop keeps iterating until 
     # the user selects 'n' in STEP 7.
