@@ -1,4 +1,5 @@
-PS E:\myproject> python -m data_entry
+PS E:\data-entry-and-search> python src/data_entry.py
+
 STUDENT DATASTORE
 -----------------
 Select an option:
@@ -12,14 +13,31 @@ ALL RECORDS
 -----------
 NAME    GENDER  BIRTH YEAR
 Mary    F       2000
-Kim     F       2002
+Jack    M       2000
+Kim     F       2000
+Zoe     F       2000
+Winnie  F       1999
 Ron     M       1960
+Maggie  F       1980
 Jack    M       1970
 Lenny   M       1966
 Zac     M       1970
+Manny   F       1980
+Lesley  F       1980
+Mac     M       1980
+Nancy   F       1970
 Paul    M       1980
 Bob     M       1980
 Henry   M       1980
+Pat     M       1980
+Jimmy   M       1980
+Greg    M       1980
+Patsy   F       1980
+Albert  M       1990
+Ronald  M       1990
+Elliot  M       2022
+Betty   F       2020
+Ron     M       2001
 
 STUDENT DATASTORE
 -----------------
@@ -33,19 +51,19 @@ Select an option:
 DATA ENTRY
 ----------
 Enter the name:
-Zoe
+ron
 Enter the gender:
-f
+m
 Enter the birth year:
-1990
+2002
 
 Do you want to enter another record? (y/n)
 n
 
 RECORDS ENTERED
 ---------------
-name    gender  birthyear
-Zoe     F       1990
+NAME    GENDER  BIRTH YEAR
+Ron     M       2002
 
 STUDENT DATASTORE
 -----------------
@@ -59,57 +77,72 @@ Select an option:
 DATA SEARCH
 -----------
 Select an option:
-Enter 1 to search by name.
-Enter 2 to search by gender.
-Enter 3 to search by birth year.
+1. Search by name.
+2. Search by gender.
+3. Search by birth year.
 1
 
-Enter the name: ron
+Enter the name:
+ron
 
 MATCHED RECORDS
 ---------------
-NAME  GENDER  BIRTH YEAR
-Ron   M       1960
+NAME    GENDER  BIRTH YEAR
+Ron     M       1960
+Ron     M       2001
+Ron     M       2002
 
-Do you wish to do another search? (y/n)
-y
-
-Select an option:
-Enter 1 to search by name.
-Enter 2 to search by gender.
-Enter 3 to search by birth year.
-2
-
-Enter the gender: f
-
-MATCHED RECORDS
----------------
-NAME  GENDER  BIRTH YEAR
-Mary  F       2000
-Kim   F       2002
-Zoe   F       1990
-
-Do you wish to do another search? (y/n)
+Do you want to do another search? (y/n)
 y
 
 DATA SEARCH
 -----------
 Select an option:
-Enter 1 to search by name.
-Enter 2 to search by gender.
-Enter 3 to search by birth year.
-3
+1. Search by name.
+2. Search by gender.
+3. Search by birth year.
+2
 
-Enter the birth year: 1980
+Enter the gender:
+f
 
 MATCHED RECORDS
 ---------------
 NAME    GENDER  BIRTH YEAR
-Paul    M       1980
-Bob     M       1980
-Henry   M       1980
+Mary    F       2000
+Kim     F       2000
+Zoe     F       2000
+Winnie  F       1999
+Maggie  F       1980
+Manny   F       1980
+Lesley  F       1980
+Nancy   F       1970
+Patsy   F       1980
+Betty   F       2020
 
-Do you wish to do another search? (y/n)
+Do you want to do another search? (y/n)
+y
+
+DATA SEARCH
+-----------
+Select an option:
+1. Search by name.
+2. Search by gender.
+3. Search by birth year.
+3
+
+Enter the birthyear:
+2000
+
+MATCHED RECORDS
+---------------
+NAME    GENDER  BIRTH YEAR
+Mary    F       2000
+Jack    M       2000
+Kim     F       2000
+Zoe     F       2000
+
+Do you want to do another search? (y/n)
 n
 
 STUDENT DATASTORE
@@ -120,4 +153,4 @@ Select an option:
 3. Search for a record.
 4. Quit.
 4
-PS E:\myproject>
+PS E:\data-entry-and-search>
