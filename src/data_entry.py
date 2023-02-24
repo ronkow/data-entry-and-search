@@ -1,17 +1,10 @@
-'''
-IMPROVING YOUR PROGRAM
-1. Validate all user entries.
-2. Split a long function into two or more shorter functions.
-3. Delete unnecessary lines of code.
-4. Write more comments.
-5. Follow python best practices and recommended style.
-Style guide:
-https://peps.python.org/pep-0008/
-'''
-
 import os
 
-from file import file_to_list_of_dicts, list_of_dicts_to_file
+from file import file_to_list_of_dicts
+from file import list_of_dicts_to_file
+
+from validation import validate_name
+from validation import validate_year
 
 from data_search import search
 
@@ -36,31 +29,6 @@ def retrieve_all_data(filepath):
         print_records(lod)
 
             
-###################
-# VALIDATION
-###################
-
-def validate_year(x):
-    digits = '0123456789'
-    for char in x:   
-        if char not in digits:
-            return False 
-    x = int(x)                 
-    if x >= 1960 and x <= 2022:
-        return True
-    else:
-        return False
-
-def validate_name(x):
-    upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    lower = 'abcdefghijklmnopqrstuvwxyz'
-    whitespace = ' '
-    letters = upper + lower + whitespace
-    for char in x:   
-        if char not in letters:
-            return False 
-    return True    
-
 ###################
 # ENTER NEW RECORD
 ###################
@@ -163,7 +131,7 @@ def select_option():
 ###################
 
 def main():
-    DATA_DIR = '/data-entry-and-search/data'
+    DATA_DIR = 'data-entry-and-search-python\data'
     DATA_PATH = os.path.join(DATA_DIR, 'data.csv')
     
     while True:
@@ -188,7 +156,7 @@ def main():
             lod = search(DATA_PATH)
             
         elif x == '4':
-            return         # quit
+            return
 
             
 if __name__ == '__main__':
